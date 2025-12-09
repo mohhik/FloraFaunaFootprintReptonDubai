@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yellow Zone - Flora and Fauna</title>
+    <style>
+        /* CSS is the same as the red.html template for consistent styling */
+        body {
+            background-color: #f4ece5; /* soft beige-brown */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #4b2e1a; /* deep brown text */
+            border: solid #7b4b2a; /* brown border */
+        }
+
+        h1 {
+            text-align: center;
+            color: #4b2e1a;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #7b4b2a;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info p {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #cca88a;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #b88a6d; /* brown header */
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #e6d5c9; /* light brown hover */
+        }
+
+        /* Responsive Mobile View (4-column adaptation) */
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table tr {
+                 border-bottom: 2px solid #7b4b2a;
+                 margin-bottom: 15px;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td:last-child {
+                border-bottom: 0;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #4b2e1a;
+            }
+
+            table td:nth-child(1)::before { content: "Species (Common Name)"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Habitat Type"; }
+            table td:nth-child(4)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Repton Circle - Yellow Zone</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 24</p>
+        <p><b>Habitat Type:</b> Dry Savannas, Woodlands, Coastal/Wetlands</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SPECIES (COMMON NAME)</th>
+                <th>SCIENTIFIC NAME</th>
+                <th>HABITAT TYPE</th>
+                <th>COMMONLY FOUND AREAS (NATIVE RANGE)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tamarind</td>
+                <td>Tamarindus indica L.</td>
+                <td>Dry savannas, woodlands, and deciduous bushlands.</td>
+                <td>Native to tropical Africa (Sudan, Ethiopia, Kenya, Tanzania, and westward). Widely cultivated globally.</td>
+            </tr>
+            <tr>
+                <td>Japanese Yew</td>
+                <td>Taxus cuspidata Siebold & Zucc.</td>
+                <td>Evergreen forests and temperate regions.</td>
+                <td>Native to Japan, Korea, northeast China, and the extreme southeast of Russia.</td>
+            </tr>
+            <tr>
+                <td>Mareer</td>
+                <td>Cordia subcordata Lam.</td>
+                <td>Seasonally dry tropical biome, especially coastal forests.</td>
+                <td>Native range extends from Somalia to northern Mozambique, across the western Indian Ocean to the Pacific islands.</td>
+            </tr>
+            <tr>
+                <td>Geigertree</td>
+                <td>Cordia sebestena L.</td>
+                <td>Coastal environments, often in dry, broadleaf evergreen forests and shrublands.</td>
+                <td>Native to the American tropics (southern Florida, Bahamas, Central America, Greater Antilles).</td>
+            </tr>
+            <tr>
+                <td>Bermudagrass</td>
+                <td>Cynodon dactylon (L.) Pers.</td>
+                <td>Grasslands, savannas, disturbed sites, and cultivated areas.</td>
+                <td>Native to the Old World tropics and subtropics (Europe, Africa, Asia, and Australia).</td>
+            </tr>
+            <tr>
+                <td>Yellow Trumpet</td>
+                <td>Handroanthus ochraceus (Cham.) Mattos</td>
+                <td>Wet tropical biome, including forests, savannas, and shrublands.</td>
+                <td>Native to a broad range from Central America to northwestern Argentina and Trinidad.</td>
+            </tr>
+            <tr>
+                <td>Mexican Petunia</td>
+                <td>Ruellia simplex C. Wright</td>
+                <td>Marshy/wet areas, wetlands, and disturbed sites with medium to wet soil.</td>
+                <td>Native to southern North America, southern South America, and the Antilles.</td>
+            </tr>
+            <tr>
+                <td>Common Boxwood</td>
+                <td>Buxus sempervirens L.</td>
+                <td>Understory of forests, often on soils derived from chalk or limestone.</td>
+                <td>Native to western and southern Europe, northwest Africa, and southwest Asia.</td>
+            </tr>
+            <tr>
+                <td>Ziricote</td>
+                <td>Cordia dodecandra A.DC.</td>
+                <td>Dry tropical forests and thickets, often in calcareous soils.</td>
+                <td>Central Mexico to Guatemala, Belize, Honduras, and Cuba.</td>
+            </tr>
+            <tr>
+                <td>Peregrina</td>
+                <td>Jatropha integerrima Jacq.</td>
+                <td>Sandy and semi-arid areas, close to swampy zones.</td>
+                <td>West Indies, including Cuba and Hispaniola.</td>
+            </tr>
+            <tr>
+                <td>Bottlebrush</td>
+                <td>Callistemon(Genus)</td>
+                <td>Moist conditions, often along creek beds (temperate to tropical regions).</td>
+                <td>Endemic to Australia and New Caledonia.</td>
+            </tr>
+            <tr>
+                <td>(Lobed Leaf Solanum)</td>
+                <td>Solanum sp.</td>
+                <td>Cosmopolitan genus found in tropical and subtropical habitats, often in forest edges or littoral vegetation.</td>
+                <td>Cosmopolitan genus, with species native to tropical and subtropical regions worldwide.</td>
+            </tr>
+            <tr>
+                <td>Geigertree</td>
+                <td>Cordia sebestena L.</td>
+                <td>Coastal environments, dry broadleaf evergreen forests.</td>
+                <td>American tropics (Southern Florida, Bahamas, Central America, Greater Antilles).</td>
+            </tr>
+            <tr>
+                <td>Bermudagrass</td>
+                <td>Cynodon dactylon (L.) Pers.</td>
+                <td>Grasslands, savannas, and disturbed sites.</td>
+                <td>Native to the Old World tropics and subtropics (Europe, Africa, Asia, and Australia).</td>
+            </tr>
+            <tr>
+                <td>Yellow Trumpet</td>
+                <td>Handroanthus ochraceus (Cham.) Mattos</td>
+                <td>Wet tropical biome, including forests, savannas, and shrublands.</td>
+                <td>Central America to northwestern Argentina and Trinidad.</td>
+            </tr>
+            <tr>
+                <td>Common Boxwood</td>
+                <td>Buxus sempervirens L.</td>
+                <td>Understory of forests, often on chalk/limestone soils.</td>
+                <td>Western and southern Europe, northwest Africa, and southwest Asia.</td>
+            </tr>
+            <tr>
+                <td>St. Augustine Grass</td>
+                <td>Stenotaphrum secundatum (Walter) Kuntze</td>
+                <td>Coastal/wetland areas (sandy beaches, swamps, lagoons, marshes, streams).</td>
+                <td>Southeastern U.S.A., South America, and Africa.</td>
+            </tr>
+            <tr>
+                <td>Mexican Petunia</td>
+                <td>Ruellia simplex C. Wright</td>
+                <td>Marshy/wet areas, ditches, pond shores; also tolerates drier sites.</td>
+                <td>Southern North America, Southern South America, and the Antilles.</td>
+            </tr>
+            <tr>
+                <td>Small Leaf Clusia</td>
+                <td>Clusia fluminensis Planch. & Triana</td>
+                <td>Littoral forests, often very close to the sea in sandy soils.</td>
+                <td>Eastern Brazil (South America).</td>
+            </tr>
+            <tr>
+                <td>Panicum Preontis</td>
+                <td>Coleataenia prionitis (Nees) Soreng</td>
+                <td>Tropical and subtropical grasslands and disturbed areas.</td>
+                <td>Native to South America, specifically Brazil and neighboring regions.</td>
+            </tr>
+            <tr>
+                <td>Snowbush</td>
+                <td>Breynia disticha J.R.Forst. & G.Forst.</td>
+                <td>Widely cultivated in tropical locales; native habitat is the western Pacific.</td>
+                <td>Native to New Caledonia and Vanuatu in the western Pacific.</td>
+            </tr>
+            <tr>
+                <td>Pokosola / Bloodhorn</td>
+                <td>Ochrosia elliptica Labill.</td>
+                <td>Grows naturally in north-eastern Australia and the southwest Pacific.</td>
+                <td>Native to north-eastern Australia and the southwest Pacific.</td>
+            </tr>
+            <tr>
+                <td>Lesser Bougainvillea</td>
+                <td>Bougainvillea glabra Choisy</td>
+                <td>Grows in well-drained sandy desert soils, slopes, and disturbed rocky soil.</td>
+                <td>Native to Brazil.</td>
+            </tr>
+            <tr>
+                <td>Tamarind</td>
+                <td>Tamarindus indica L.</td>
+                <td>Dry savannas, woodlands, and deciduous bushlands.</td>
+                <td>Native to tropical Africa. Main Gate</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>
