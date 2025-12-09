@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Zone - Flora and Fauna</title>
+    <style>
+        /* CSS is consistent with Red, Yellow, Blue, and Purple Zones */
+        body {
+            background-color: #f4ece5; /* soft beige-brown */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            color: #4b2e1a; /* deep brown text */
+            border: solid #7b4b2a; /* brown border */
+        }
+
+        h1 {
+            text-align: center;
+            color: #4b2e1a;
+            font-family: Garamond, serif;
+            margin-top: 40px;
+        }
+
+        .info {
+            background-color: #ffffff;
+            border: 2px solid #7b4b2a;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .info p {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        table th, table td {
+            border: 1px solid #cca88a;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        table th {
+            background-color: #b88a6d; /* brown header */
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #e6d5c9; /* light brown hover */
+        }
+
+        /* Responsive Mobile View (4-column adaptation) */
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            table th {
+                display: none;
+            }
+
+            table tr {
+                 border-bottom: 2px solid #7b4b2a;
+                 margin-bottom: 15px;
+            }
+
+            table td {
+                position: relative;
+                padding-left: 50%;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+
+            table td:last-child {
+                border-bottom: 0;
+            }
+
+            table td::before {
+                position: absolute;
+                top: 12px;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #4b2e1a;
+            }
+
+            table td:nth-child(1)::before { content: "Species (Common Name)"; }
+            table td:nth-child(2)::before { content: "Scientific Name"; }
+            table td:nth-child(3)::before { content: "Habitat Type"; }
+            table td:nth-child(4)::before { content: "Commonly Found Areas"; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Carpark - Green Zone</h1>
+
+    <div class="info">
+        <p><b>Number of Species:</b> 12 (minimum based on visible data)</p>
+        <p><b>Habitat Type:</b> Subtropical, Coastal/Littoral, Evergreen Forest</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SPECIES (COMMON NAME)</th>
+                <th>SCIENTIFIC NAME</th>
+                <th>HABITAT TYPE</th>
+                <th>COMMONLY FOUND AREAS (NATIVE RANGE)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Golden Dew Drops</td>
+                <td>Duranta erecta L.</td>
+                <td>Evergreen sprawling shrub found in rocky or sandy coastal areas, or moister, disturbed sites inland.</td>
+                <td>Native to the Americas, from Mexico and the Caribbean south to Brazil and Argentina.</td>
+            </tr>
+            <tr>
+                <td>Henna</td>
+                <td>Lawsonia inermis L.</td>
+                <td>Shrub or tree growing primarily in the subtropical biome. Found in dry, coastal scrublands.</td>
+                <td>Native range is Northeast Tropical Africa, the Arabian Peninsula, and South Pakistan to India.</td>
+            </tr>
+            <tr>
+                <td>Sweet Mock Orange</td>
+                <td>Philadelphus coronarius L.</td>
+                <td>Scrub and woodland on warm rocky hills and screes.</td>
+                <td>Native to the Caucasus and northeastern Turkey, and parts of Southern Europe (e.g., S. Austria, Italy).</td>
+            </tr>
+            <tr>
+                <td>Zoysia / Manila Grass</td>
+                <td>Zoysia matrella (L.) Merr.</td>
+                <td>Perennial grass growing primarily in the wet tropical biome. Grows in low elevations, preferring sandy soils.</td>
+                <td>Native to Tropical & Subtropical Asia to the Northwest Pacific, including Southern Japan, Taiwan, China, Southeast Asia, and Northern Australia.</td>
+            </tr>
+            <tr>
+                <td>Mamey Sapote</td>
+                <td>Pouteria sapota (Jacq.) H.E.Moore & Stearn</td>
+                <td>Prefers smooth sandy, deep, clay and fertile soils; does not tolerate low temperatures or prolonged drought.</td>
+                <td>Southern Mexico and Central America; likely from southern Mexico (Veracruz, Tabasco, Chiapas) through Nicaragua, Belize, and northern Honduras.</td>
+            </tr>
+            <tr>
+                <td>Japanese Yew</td>
+                <td>Taxus cuspidata Siebold & Zucc.</td>
+                <td>Evergreen forests and temperate regions.</td>
+                <td>Native to Japan, Korea, northeast China, and the extreme southeast of Russia.</td>
+            </tr>
+            <tr>
+                <td>Mareer</td>
+                <td>Cordia subcordata Lam.</td>
+                <td>Seasonally dry tropical biome, especially coastal forests.</td>
+                <td>Native range extends from Somalia to northern Mozambique, across the western Indian Ocean to the Pacific islands.</td>
+            </tr>
+            <tr>
+                <td>Geigertree</td>
+                <td>Cordia sebestena L.</td>
+                <td>Coastal environments, often in dry, broadleaf evergreen forests and shrublands.</td>
+                <td>Native to the American tropics (southern Florida, Bahamas, Central America, Greater Antilles).</td>
+            </tr>
+            <tr>
+                <td>Bermudagrass</td>
+                <td>Cynodon dactylon (L.) Pers.</td>
+                <td>Grasslands, savannas, disturbed sites, and cultivated areas.</td>
+                <td>Native to the Old World tropics and subtropics (Europe, Africa, Asia, and Australia).</td>
+            </tr>
+            <tr>
+                <td>Yellow Trumpet</td>
+                <td>Handroanthus ochraceus (Cham.) Mattos</td>
+                <td>Wet tropical biome, including forests, savannas, and shrublands.</td>
+                <td>Native to a broad range from Central America to northwestern Argentina and Trinidad.</td>
+            </tr>
+            <tr>
+                <td>Mexican Petunia</td>
+                <td>Ruellia simplex C. Wright</td>
+                <td>Marshy/wet areas, wetlands, and disturbed sites with medium to wet soil.</td>
+                <td>Native to southern North America, southern South America, and the Antilles.</td>
+            </tr>
+            <tr>
+                <td>Common Boxwood</td>
+                <td>Buxus sempervirens L.</td>
+                <td>Understory of forests, often on soils derived from chalk or limestone.</td>
+                <td>Native to western and southern Europe, northwest Africa, and southwest Asia.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        &copy; 2025 Flora & Fauna Footprint.
+    </footer>
+
+</body>
+</html>
