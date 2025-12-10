@@ -9,32 +9,45 @@
             font-family: Arial, sans-serif;
             color: white;
             margin: 0;
-            padding: 20px 0;
+            padding: 40px 0; /* INCREASED vertical padding on the body */
             text-align: center;
         }
 
         .content-container {
-            max-width: 800px;
+            max-width: 900px; /* Increased max width slightly for more breathing room */
             margin: 0 auto;
+            padding: 20px; /* Add some horizontal padding for smaller screens */
         }
 
         h1 {
-            font-size: 32px;
-            margin-bottom: 5px;
+            font-size: 38px; /* Slightly larger heading */
+            margin-bottom: 10px; /* More space below the main heading */
             letter-spacing: 2px;
         }
 
         .subtitle {
-            font-size: 14px;
+            /* INCREASED FONT SIZE for the descriptive text */
+            font-size: 18px; 
+            line-height: 1.6; /* Improved line spacing for readability */
             color: #ccc;
-            margin-top: 5px;
+            margin-top: 15px; /* INCREASED space above the subtitle */
+            margin-bottom: 15px; /* INCREASED space below the descriptive text */
+        }
+        
+        /* Style for the exploration prompt */
+        .explore-prompt {
+            font-size: 18px; /* Same size as subtitle to draw attention */
+            font-weight: bold;
+            margin-top: 30px; /* INCREASED space above the map prompt */
+            margin-bottom: 30px; /* INCREASED space below the map prompt */
         }
 
         .responsive-map {
             max-width: 100%;
             height: auto;
             display: block;
-            margin-top: 20px;
+            margin: 0 auto; /* Center the image */
+            border: 1px solid #333; /* Optional: subtle border */
         }
     </style>
     
@@ -44,11 +57,11 @@
 
     <div class="content-container">
         
-        <h1>REPTON DUBAI</h1>  
+        <h1>REPTON DUBAI</h1>
         
         <p class="subtitle">A digital reserve of the Repton Dubai campus's natural heritage, fostering environmental awareness, education, and conservation for future generations.</p>
         
-        <p class="subtitle">Explore the map - hover over zones to see detailed plant records. </p>
+        <p class="explore-prompt">Explore the map - hover over zones to see detailed plant records. </p>
         
         <img src="Reptondubai.png" usemap="#Reptonmap" class="responsive-map" />
         
@@ -59,11 +72,14 @@
             <area shape="poly" coords="643,630,610,710,536,786,540,877,535,909,541,984,574,1001,571,1034,651,1072,781,1076,893,1107,973,1007,1032,813,958,723,938,735,863,744,805,721,741,665" title="Senior School/Blue Zone" href="bluezone.html">
             <area shape="poly" coords="719,18,682,120,785,156,849,113,915,127,977,94,1059,88,1106,87,1168,130,1188,214,1194,259,1210,410,1415,476,1459,352,1451,298,1497,242,1501,204,1112,79,798,96" title="Parking/Green Zone" href="greenzone.html">
         </map>
+        
+        <footer style="margin-top: 40px; font-size: 14px; color: #888;">
+            &copy; 2025 Repton Dubai Flora & Fauna Project.
+        </footer>
     </div>
 
     <script>
-        imageMapResize(); 
+        imageMapResize();
     </script>
-
 </body>
 </html>
