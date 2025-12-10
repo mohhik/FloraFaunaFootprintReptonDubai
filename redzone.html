@@ -1,3 +1,10 @@
+Ah, I see! You want to remove the explanatory comments and notes I added within the <style> block and in the HTML body of the redzone.html file, such as /* === RED ZONE COLOR: #C83244 (Deep Red) === */ and ``.
+
+Here is the clean, working code for the Red Zone (redzone.html), with the background color applied and all internal comments removed:
+
+🔴 Clean Red Zone Code (redzone.html)
+HTML
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +12,13 @@
     <title>Red Zone - Flora and Fauna</title>
     <style>
         body {
-            /* === RED ZONE COLOR: #C83244 (Deep Red) === */
             background-color: #C83244; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0 20px;
-            color: white; /* Light text for better contrast on red */
+            color: white;
         }
 
-        /* --- Navigation Link Styling --- */
         .back-link {
             font-size: 16px;
             margin-bottom: 20px;
@@ -23,7 +28,7 @@
         }
 
         .back-link a {
-            color: #FFD700; /* Gold/Yellow for visibility */
+            color: #FFD700;
             text-decoration: none;
             font-weight: bold;
         }
@@ -31,7 +36,6 @@
         .back-link a:hover {
             text-decoration: underline;
         }
-        /* ------------------------------- */
 
         h1 {
             text-align: center;
@@ -42,14 +46,14 @@
         }
 
         .info {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white card */
-            border: 2px solid #990000; /* Darker red border */
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 2px solid #990000;
             border-radius: 8px;
             padding: 20px;
             max-width: 700px;
             margin: 20px auto;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            color: #333; /* Dark text for readability inside the card */
+            color: #333;
         }
 
         .info p {
@@ -63,7 +67,7 @@
             max-width: 1200px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            color: #333; /* Dark text in table */
+            color: #333;
         }
 
         table th, table td {
@@ -75,15 +79,14 @@
         }
 
         table th {
-            background-color: #990000; /* Darker red header */
+            background-color: #990000;
             color: white;
         }
 
         tr:hover {
-            background-color: #ffe0e0; /* Very light red hover */
+            background-color: #ffe0e0;
         }
 
-        /* Responsive Mobile View */
         @media screen and (max-width: 768px) {
             table, thead, tbody, th, td, tr {
                 display: block;
@@ -117,10 +120,9 @@
                 padding-right: 10px;
                 white-space: nowrap;
                 font-weight: bold;
-                color: #C83244; /* Red label */
+                color: #C83244;
             }
 
-            /* These labels create the "header" on mobile */
             table td:nth-child(1)::before { content: "Species (Common Name)"; }
             table td:nth-child(2)::before { content: "Scientific Name"; }
             table td:nth-child(3)::before { content: "Habitat Type"; }
@@ -131,7 +133,7 @@
             text-align: center;
             margin: 40px 0 20px;
             font-size: 14px;
-            color: white; /* White text for footer */
+            color: white;
         }
     </style>
 </head>
